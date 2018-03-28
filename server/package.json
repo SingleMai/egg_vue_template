@@ -1,0 +1,60 @@
+{
+  "name": "knowledge_analyse",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "async": "^2.6.0",
+    "await-stream-ready": "^1.0.1",
+    "co": "^4.6.0",
+    "egg": "^1.4.0",
+    "egg-scripts": "^1.1.0",
+    "egg-sequelize": "^3.0.1",
+    "egg-socket.io": "^2.0.2",
+    "egg-validate": "^1.0.0",
+    "koa.io": "0.0.3",
+    "lowdb": "^1.0.0",
+    "moment": "^2.18.1",
+    "node-xlsx": "^0.11.2",
+    "sqlite3-offline": "^3.1.8-5",
+    "stream-wormhole": "^1.0.3",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^3.4.0",
+    "egg-ci": "^1.6.0",
+    "egg-mock": "^3.7.0",
+    "eslint": "^4.1.1",
+    "eslint-config-egg": "^4.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start index.js --name knowledge_anyalyse",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "6, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
