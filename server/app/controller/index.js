@@ -6,7 +6,8 @@ class IndexController extends Controller {
   // GET /
   * index () {
     const { ctx } = this
-    const res = fs.readFileSync('app/public/dist/index.html', 'utf-8')
+    const res = fs.readFileSync('../../yibot_assident_helper/client/viewPlugin/index.html', 'utf-8')
+    ctx.append('X-Frame-Options', 'ALLOW-ALL')
     ctx.body = res
   }
 }
